@@ -1,0 +1,22 @@
+import { and, eq, inArray } from "drizzle-orm";
+import { db, groupMembers, events, groups, users } from "@/db";
+import { withUser, json, bad, body } from "@/lib/api";
+import { notify } from "@/lib/push";
+import { fmtTime } from "@/lib/time";
+export const POST = withUser(async (userId, req, ctx) => {
+  const { id } = await ctx.params;
+  const [m] = await db.select().from(groupMembers).where(and(eq(groupMembers.groupId, id), eq(groupMembers.userId, userId)));
+  if (!m) return bad("Join the group first", 403);
+  const b = await body<{ title?: string; start?: string; end?: string; category?: string; mandatory?: boolean; location?: string }>(req);
+  const title = String(b.title || "").trim(); const s = new Date(String(b.start)), e = new Date(String(b.end));
+  if (!title) return bad("Give it a name"); if (isNaN(s.getTime()) || e <= s) return bad("End has to be after start");
+  if (b.mandatory && m.role !== "officer") return bad("Only officers can mark events mandatory", 403);
+  const cat = ["classes", "greek", "sports", "social", "personal"].includes(String(b.category)) ? (b.category as "social") : "social";
+  const [ev] = await db.insert(events).values({ groupId: id, title, start: s, end: e, category: cat, mandatory: !!b.mandatory, postedById: userId, location: b.location ? String(b.location).slice(0, 120) : null }).returning();
+  const [g] = await db.select().from(groups).where(eq(groups.id, id));
+  const [poster] = await db.select({ name: users.name }).from(users).where(eq(users.id, userId));
+  const others = await db.select({ userId: groupMembers.userId }).from(groupMembers).where(eq(groupMembers.groupId, id));
+  const tzRows = await db.select({ id: users.id, tz: users.timezone }).from(users).where(inArray(users.id, others.map((o) => o.userId)));
+  await Promise.all(others.filter((o) => o.userId !== userId).map((o) => notify(o.userId, "post", `post|${ev.id}`, `${g?.name}: ${ev.mandatory ? "mandatory · " : ""}${title}`, `${poster?.name || "Someone"} posted ${title} for ${fmtTime(s, tzRows.find((t) => t.id === o.userId)?.tz || "America/New_York")}. Tap to RSVP.`, `/groups/${id}`)));
+  return json({ event: ev, invited: others.length });
+});

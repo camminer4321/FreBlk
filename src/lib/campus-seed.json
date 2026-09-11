@@ -1,0 +1,267 @@
+{
+ "Virginia Tech": {
+  "short": "VT",
+  "c1": "#861F41",
+  "c2": "#E5751F",
+  "detail": "Blacksburg, VA",
+  "games": [
+   {
+    "title": "Football vs Boston College",
+    "place": "Lane Stadium",
+    "note": "\u039a\u03a3\u039d tailgate in Lot 4",
+    "day": "Sat",
+    "start": "15:30",
+    "end": "18:30",
+    "cat": "sports"
+   },
+   {
+    "title": "Basketball exhibition",
+    "place": "Cassell Coliseum",
+    "note": "",
+    "day": "Tue",
+    "start": "19:00",
+    "end": "21:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Club Baseball vs JMU",
+    "place": "Away",
+    "note": "Bus leaves 10:15a",
+    "day": "Sat",
+    "start": "13:00",
+    "end": "16:00",
+    "cat": "sports"
+   }
+  ],
+  "campus": [
+   {
+    "title": "Gobbler Fest",
+    "place": "Drillfield",
+    "warn": false,
+    "day": "Fri",
+    "start": "16:00",
+    "end": "18:00",
+    "cat": "social"
+   },
+   {
+    "title": "Fall Career Fair",
+    "place": "Squires Commonwealth Ballroom",
+    "warn": false,
+    "day": "Mon",
+    "start": "10:00",
+    "end": "13:00",
+    "cat": "personal"
+   },
+   {
+    "title": "Wellness pickleball open play",
+    "place": "McComas courts 3\u20136",
+    "warn": false,
+    "day": "Wed",
+    "start": "18:00",
+    "end": "19:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Last day to drop a course",
+    "place": "Registrar",
+    "warn": true,
+    "day": "Fri",
+    "start": "22:30",
+    "end": "23:00",
+    "cat": "personal"
+   }
+  ]
+ },
+ "Texas Christian University": {
+  "short": "TCU",
+  "c1": "#4D1979",
+  "c2": "#A3A9AC",
+  "detail": "Fort Worth, TX",
+  "games": [
+   {
+    "title": "Football vs Baylor",
+    "place": "Amon G. Carter Stadium",
+    "note": "Rivalry week",
+    "day": "Sat",
+    "start": "18:00",
+    "end": "21:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Volleyball vs Baylor",
+    "place": "Schollmaier Arena",
+    "note": "",
+    "day": "Wed",
+    "start": "19:00",
+    "end": "21:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Club Soccer vs SMU",
+    "place": "Home",
+    "note": "",
+    "day": "Sun",
+    "start": "14:00",
+    "end": "16:00",
+    "cat": "sports"
+   }
+  ],
+  "campus": [
+   {
+    "title": "Frog Fountain concert series",
+    "place": "Frog Fountain",
+    "warn": false,
+    "day": "Fri",
+    "start": "17:00",
+    "end": "19:00",
+    "cat": "social"
+   },
+   {
+    "title": "Career fair",
+    "place": "Sadler Hall",
+    "warn": false,
+    "day": "Tue",
+    "start": "11:00",
+    "end": "14:00",
+    "cat": "personal"
+   },
+   {
+    "title": "Late add/drop deadline",
+    "place": "Registrar",
+    "warn": true,
+    "day": "Fri",
+    "start": "22:30",
+    "end": "23:00",
+    "cat": "personal"
+   }
+  ]
+ },
+ "Pennsylvania State University": {
+  "short": "PSU",
+  "c1": "#041E42",
+  "c2": "#96BEE6",
+  "detail": "University Park, PA",
+  "games": [
+   {
+    "title": "Football vs Ohio State",
+    "place": "Beaver Stadium",
+    "note": "White Out",
+    "day": "Sat",
+    "start": "12:00",
+    "end": "15:30",
+    "cat": "sports"
+   },
+   {
+    "title": "Wrestling dual meet",
+    "place": "Rec Hall",
+    "note": "",
+    "day": "Fri",
+    "start": "19:00",
+    "end": "21:00",
+    "cat": "sports"
+   },
+   {
+    "title": "THON 5K",
+    "place": "HUB Lawn",
+    "note": "",
+    "day": "Sun",
+    "start": "09:00",
+    "end": "11:00",
+    "cat": "sports"
+   }
+  ],
+  "campus": [
+   {
+    "title": "THON committee meeting",
+    "place": "HUB-Robeson",
+    "warn": false,
+    "day": "Thu",
+    "start": "20:00",
+    "end": "21:00",
+    "cat": "social"
+   },
+   {
+    "title": "Career fair",
+    "place": "Bryce Jordan Center",
+    "warn": false,
+    "day": "Mon",
+    "start": "10:00",
+    "end": "13:00",
+    "cat": "personal"
+   },
+   {
+    "title": "Course drop deadline",
+    "place": "Registrar",
+    "warn": true,
+    "day": "Fri",
+    "start": "22:30",
+    "end": "23:00",
+    "cat": "personal"
+   }
+  ]
+ },
+ "University of Georgia": {
+  "short": "UGA",
+  "c1": "#BA0C2F",
+  "c2": "#C4B998",
+  "detail": "Athens, GA",
+  "games": [
+   {
+    "title": "Football vs Florida",
+    "place": "Sanford Stadium",
+    "note": "World\u2019s Largest Outdoor Cocktail Party",
+    "day": "Sat",
+    "start": "15:30",
+    "end": "19:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Gymnastics meet",
+    "place": "Stegeman Coliseum",
+    "note": "",
+    "day": "Fri",
+    "start": "19:00",
+    "end": "21:00",
+    "cat": "sports"
+   },
+   {
+    "title": "Club Baseball vs Auburn",
+    "place": "Home",
+    "note": "",
+    "day": "Sat",
+    "start": "13:00",
+    "end": "16:00",
+    "cat": "sports"
+   }
+  ],
+  "campus": [
+   {
+    "title": "Tate Plaza concert",
+    "place": "Tate Plaza",
+    "warn": false,
+    "day": "Fri",
+    "start": "16:00",
+    "end": "18:00",
+    "cat": "social"
+   },
+   {
+    "title": "Career fair",
+    "place": "Classic Center",
+    "warn": false,
+    "day": "Tue",
+    "start": "10:00",
+    "end": "13:00",
+    "cat": "personal"
+   },
+   {
+    "title": "Last day to drop a course",
+    "place": "Registrar",
+    "warn": true,
+    "day": "Fri",
+    "start": "22:30",
+    "end": "23:00",
+    "cat": "personal"
+   }
+  ]
+ }
+}

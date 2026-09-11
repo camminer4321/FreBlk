@@ -1,0 +1,1 @@
+export const DEFAULT_INTERESTS = ["Movies", "Pickleball", "Trivia", "Food", "Hiking", "Board games", "Bowling", "Live music", "Basketball", "Coding", "Gym", "Hockey", "Football", "Soccer", "Golf", "Fishing", "Gaming", "Cooking", "Photography", "Running", "Climbing", "Concerts", "Podcasts", "Volunteering", "Study groups", "Intramurals", "Tailgates", "Skiing", "Poker", "Anime"];
